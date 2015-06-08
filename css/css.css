@@ -1,0 +1,242 @@
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+维护：玉伯(lifesinger@gmail.com), 正淳(ragecarrier@gmail.com)
+*/
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+
+/*head*/
+body{
+	font-size: 14px;
+}
+#ban-list-container{
+	width: 300px;
+	height: 320px;
+	border: 1px solid #eee;
+}
+#ban-list-router-container{
+	width: 290px;
+	height: 245px;
+	background: #eee;
+	margin: 5px auto;
+	position: relative;
+	margin-bottom: 10px;
+}
+.ban-list-router-img{
+	width: 290px;
+	height: 210px;
+	float: left;
+}
+
+.ban-list-router-txt{
+	width: 290px;
+	height: 24.5px;
+	padding: 10.5px 0;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+
+#ban-list-router-bar{
+	width: 155px;
+	height: 10px;
+	margin: 0 67.5px;
+}
+.ban-list-bar-act{
+	width: 40px;
+	height: 10px;
+	background: #8d8;
+	float: left;
+	margin-left: 0;
+	margin-right: 5px;
+}
+.ban-list-bar-sto{
+	width: 25px;
+	height: 10px;
+	background: #eee;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/*center*/
+#mid-pro-people-container{
+	width: 980px;
+	height: 280px;
+}
+#mid-pro-kind{
+	border-bottom: 2px solid #ddd;
+    height: 33px;
+    padding: 0 0 0 30px;
+    margin-bottom: 10px;
+}
+#mid-pro-kind a{
+	text-decoration: none;
+	color: #000;
+    float: left;
+    font: 16px/40px "Microsoft YaHei";
+    height: 33px;
+    padding: 0 20px;
+}
+
+#mid-pro-kind a.on{
+    border-bottom: 2px solid #05964b;
+    color: #05964b;
+}
+
+.mid-pro-pic-bar{
+	height: 180px;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+.mid-pro-pic-bar li {
+    margin: 0 20px 0 0;
+    width: 220px;
+    display: block;
+    float: left;
+    height: 200px;
+    overflow: hidden;
+}
+.mid-pro-pic-bar a{
+	width: 220px;
+	height: 140px;
+	color: #05964b;
+    font-weight: bold;
+}
+.title{
+	display: block;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	text-decoration: none;
+}
+.mid-pro-pic-bar img{
+	width: 220px;
+	height: 158px;
+}
+
+
+
+/*middlefood*/
+#mid-food-container{
+	width: 980px;
+	height: 350px;
+}
+#mid-food-kind{
+	border-bottom: 2px solid #ddd;
+	height: 33px;
+	padding: 0 0 0 30px;
+	margin-bottom: 10px;
+}
+#mid-food-kind a{
+	text-decoration: none;
+	color: #000;
+	float: left;
+	font: 16px/40px "Microsoft YaHei";
+	height: 33px;
+	padding: 0 20px;
+}
+
+#mid-food-kind a.on{
+	border-bottom: 2px solid #05964b;
+	color: #05964b;
+}
+
+.mid-food-pic-bar{
+	height: 160px;
+	margin: 0 10px;
+	overflow: hidden;
+	position: relative;
+}
+.mid-food-pic-bar li {
+	margin: 0 20px 0 0;
+	width: 220px;
+	display: block;
+	float: left;
+	height: 200px;
+	overflow: hidden;
+}
+.mid-food-pic-bar a{
+	width: 220px;
+	height: 130px;
+	color: #05964b;
+	font-weight: bold;
+}
+.title{
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-decoration: none;
+}
+.mid-food-pic-bar img{
+	width: 220px;
+	height: 130px;
+}
+
